@@ -49,6 +49,45 @@ class HomeAppViewController: BaseViewController, UICollectionViewDataSource, UIC
         }
         return UICollectionViewCell()
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let alphabet = MainAlphabetViewController()
+            let navi = UINavigationController(rootViewController: alphabet)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        } else if indexPath.row == 1 {
+            let voc = VocMinnanoNihongoViewController()
+            let navi = UINavigationController(rootViewController: voc)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        } else if indexPath.row == 2 {
+            let lesson = LessonViewController()
+            let navi = UINavigationController(rootViewController: lesson)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        } else if indexPath.row == 3 {
+            let gramma = GrammaMinnanoNihongoViewController()
+            let navi = UINavigationController(rootViewController: gramma)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        } else if indexPath.row == 4 {
+            let file = FiledownloadedViewController()
+            let navi = UINavigationController(rootViewController: file)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        } else {
+            let more = MoreViewController()
+            let navi = UINavigationController(rootViewController: more)
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                appDelegate.setRootController(vc: navi)
+            }
+        }
+    }
     
 
 }

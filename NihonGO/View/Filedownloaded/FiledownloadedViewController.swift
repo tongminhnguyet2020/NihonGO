@@ -8,14 +8,27 @@
 
 import UIKit
 
-class FiledownloadedViewController: UIViewController {
+class FiledownloadedViewController: BaseViewController {
+    
+    let tabBar = DownloadAudioPDFViewController()
+    @IBOutlet private weak var containerView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupNavigation(title: "Danh sách file")
+        setupTabBar()
         // Do any additional setup after loading the view.
     }
 
-
-   
+    func setupTabBar() {
+        self.addChild(tabBar)
+        self.containerView.addSubview(tabBar.view)
+        tabBar.didMove(toParent: self)
+    }
+        
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBar.view.frame = containerView.bounds
+    }
 
 }

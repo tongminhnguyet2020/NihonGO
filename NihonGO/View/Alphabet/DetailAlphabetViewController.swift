@@ -29,6 +29,7 @@ class DetailAlphabetViewController: BaseViewController {
         setupDetailAlphabetViewController()
         // Do any additional setup after loading the view.
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -75,6 +76,16 @@ class DetailAlphabetViewController: BaseViewController {
         }
     }
     
+    @IBAction func playSoundButtonTouchUpInside(_ sender: Any) {
+         if let charId = dataNow?.romanization {
+            if type == .hiragana {
+                playSound(soundName: charId)
+            } else {
+                playSound(soundName: charId)
+            }
+        }
+    }
+    
     @IBAction func resetButtonTouchUpInside(_ sender: Any) {
         drawingACEDrawingView.clear()
     }
@@ -99,5 +110,6 @@ class DetailAlphabetViewController: BaseViewController {
         }
         
     }
+    
     
 }

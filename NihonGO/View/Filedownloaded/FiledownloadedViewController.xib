@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiledownloadedViewController" customModule="NihonGO" customModuleProvider="target">
             <connections>
+                <outlet property="containerView" destination="JLL-1m-4ZU" id="GLr-X2-gf0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +17,19 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLL-1m-4ZU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JLL-1m-4ZU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="D2o-6m-olJ"/>
+                <constraint firstItem="JLL-1m-4ZU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IYt-2S-SlO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JLL-1m-4ZU" secondAttribute="bottom" id="UpF-8A-VDL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JLL-1m-4ZU" secondAttribute="trailing" id="VXQ-tS-keh"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="93"/>
         </view>

@@ -35,12 +35,24 @@
                                         <constraint firstAttribute="width" secondItem="kCL-o7-Wvm" secondAttribute="height" id="agr-yX-H0P"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-wX-27B">
+                                    <rect key="frame" x="101.5" y="20" width="172" height="172.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="vtU-wX-27B" secondAttribute="height" id="lBk-cO-Zhn"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="playSoundButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="QvZ-4m-aMN"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="vtU-wX-27B" secondAttribute="bottom" constant="30" id="3o3-wp-kR5"/>
                                 <constraint firstItem="kCL-o7-Wvm" firstAttribute="centerX" secondItem="FHZ-aI-Gh9" secondAttribute="centerX" id="5TW-wr-KUb"/>
+                                <constraint firstItem="vtU-wX-27B" firstAttribute="centerX" secondItem="FHZ-aI-Gh9" secondAttribute="centerX" id="PoL-48-hS8"/>
                                 <constraint firstItem="kCL-o7-Wvm" firstAttribute="top" secondItem="FHZ-aI-Gh9" secondAttribute="top" constant="20" id="fHa-WN-Cl5"/>
                                 <constraint firstAttribute="bottom" secondItem="kCL-o7-Wvm" secondAttribute="bottom" constant="30" id="iVw-4t-54x"/>
+                                <constraint firstItem="vtU-wX-27B" firstAttribute="top" secondItem="FHZ-aI-Gh9" secondAttribute="top" constant="20" id="j8Z-O1-Y3N"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnv-Ov-Asw">

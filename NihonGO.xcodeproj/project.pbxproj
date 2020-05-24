@@ -526,6 +526,10 @@
 		B9B6001A2478511C00516FE2 /* image in Resources */ = {isa = PBXBuildFile; fileRef = B9B600192478511B00516FE2 /* image */; };
 		B9B6001C247A80B400516FE2 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B6001B247A80B300516FE2 /* menu.json */; };
 		B9B6001E247A810100516FE2 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = B9B6001D247A810100516FE2 /* home.json */; };
+		B9B60020247A8F5000516FE2 /* DownloadAudioPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B6001F247A8F5000516FE2 /* DownloadAudioPDFViewController.swift */; };
+		B9B60023247ABFA100516FE2 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B60021247ABFA100516FE2 /* DownloadViewController.swift */; };
+		B9B60024247ABFA100516FE2 /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B60022247ABFA100516FE2 /* DownloadViewController.xib */; };
+		B9B60026247AC60000516FE2 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B60025247AC60000516FE2 /* PlaySound.swift */; };
 		B9BF6A0F24583FAE001662F5 /* DetailAlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF6A0D24583FAE001662F5 /* DetailAlphabetViewController.swift */; };
 		B9BF6A1024583FAE001662F5 /* DetailAlphabetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BF6A0E24583FAE001662F5 /* DetailAlphabetViewController.xib */; };
 		B9BF6A132458467A001662F5 /* VocMinnanoNihongoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BF6A112458467A001662F5 /* VocMinnanoNihongoViewController.swift */; };
@@ -1073,6 +1077,10 @@
 		B9B600192478511B00516FE2 /* image */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image; sourceTree = SOURCE_ROOT; };
 		B9B6001B247A80B300516FE2 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = SOURCE_ROOT; };
 		B9B6001D247A810100516FE2 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = SOURCE_ROOT; };
+		B9B6001F247A8F5000516FE2 /* DownloadAudioPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAudioPDFViewController.swift; sourceTree = "<group>"; };
+		B9B60021247ABFA100516FE2 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		B9B60022247ABFA100516FE2 /* DownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
+		B9B60025247AC60000516FE2 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		B9BF6A0D24583FAE001662F5 /* DetailAlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlphabetViewController.swift; sourceTree = "<group>"; };
 		B9BF6A0E24583FAE001662F5 /* DetailAlphabetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAlphabetViewController.xib; sourceTree = "<group>"; };
 		B9BF6A112458467A001662F5 /* VocMinnanoNihongoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocMinnanoNihongoViewController.swift; sourceTree = "<group>"; };
@@ -1143,13 +1151,13 @@
 				B9685CF2245C921E00A456BE /* Common */,
 				B98D2F062456F76A00C29655 /* Extension */,
 				B9007B672457271F002E9554 /* APIService */,
-				B9007B542456E118002E9554 /* View */,
 				B900767B2456D7A3002E9554 /* Model */,
 				B90076082456D786002E9554 /* dulieu */,
+				B9B600192478511B00516FE2 /* image */,
 				B90077B52456D7F2002E9554 /* audio */,
 				B90077822456D7F0002E9554 /* gram */,
 				B900767C2456D7EF002E9554 /* voc */,
-				B9B600192478511B00516FE2 /* image */,
+				B9007B542456E118002E9554 /* View */,
 				B90075F42456D525002E9554 /* AppDelegate.swift */,
 				B90075F82456D525002E9554 /* ViewController.swift */,
 				B90075FA2456D525002E9554 /* Main.storyboard */,
@@ -1772,7 +1780,10 @@
 			isa = PBXGroup;
 			children = (
 				B9BF6A19245846BD001662F5 /* FiledownloadedViewController.swift */,
+				B9B6001F247A8F5000516FE2 /* DownloadAudioPDFViewController.swift */,
 				B9BF6A1A245846BD001662F5 /* FiledownloadedViewController.xib */,
+				B9B60021247ABFA100516FE2 /* DownloadViewController.swift */,
+				B9B60022247ABFA100516FE2 /* DownloadViewController.xib */,
 			);
 			path = Filedownloaded;
 			sourceTree = "<group>";
@@ -1800,6 +1811,7 @@
 			isa = PBXGroup;
 			children = (
 				B9685CF3245C923E00A456BE /* TextToSpeech.swift */,
+				B9B60025247AC60000516FE2 /* PlaySound.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2127,6 +2139,7 @@
 				B9007ACC2456D7F5002E9554 /* le3_v_sc01.mp3 in Resources */,
 				B9007A7D2456D7F5002E9554 /* ma.mp3 in Resources */,
 				B9007B052456D7F5002E9554 /* le23_v_sc01.mp3 in Resources */,
+				B9B60024247ABFA100516FE2 /* DownloadViewController.xib in Resources */,
 				B90078ED2456D7F4002E9554 /* voc_29.html in Resources */,
 				B9007A932456D7F5002E9554 /* le36_v_sc01.mp3 in Resources */,
 				B9007A582456D7F5002E9554 /* re.mp3 in Resources */,
@@ -2451,13 +2464,16 @@
 				B9FF84E22459513700BEEF2F /* AlphabetHiraKataViewController.swift in Sources */,
 				B92610E12458203D001C8D19 /* AlphabetViewController.swift in Sources */,
 				B9007B532456DC85002E9554 /* Topic.swift in Sources */,
+				B9B60026247AC60000516FE2 /* PlaySound.swift in Sources */,
 				B9BF6A1F245846D4001662F5 /* LessonViewController.swift in Sources */,
 				B9FF84E72459734B00BEEF2F /* MainAlphabetViewController.swift in Sources */,
 				B9007B572456E145002E9554 /* HomeAppViewController.swift in Sources */,
 				B9BF6A28245896E6001662F5 /* TestAlphabetViewController.swift in Sources */,
+				B9B60020247A8F5000516FE2 /* DownloadAudioPDFViewController.swift in Sources */,
 				B9685CDC245B306E00A456BE /* ConversationDetailTableViewCell.swift in Sources */,
 				B9685CD8245B2ED800A456BE /* GramDetailTableViewCell.swift in Sources */,
 				B9FF84F52459D0A900BEEF2F /* DetailVocViewController.swift in Sources */,
+				B9B60023247ABFA100516FE2 /* DownloadViewController.swift in Sources */,
 				B90075F52456D525002E9554 /* AppDelegate.swift in Sources */,
 				B92610D9245817D8001C8D19 /* TableView+Extension.swift in Sources */,
 				B9685CF1245C72AA00A456BE /* APIOfMore.swift in Sources */,
