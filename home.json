@@ -1,0 +1,32 @@
+[
+        {
+            "title" : "Bảng chữ cái",
+            "text" : "(Học hành vất vả và kết quả ngọt bùi)",
+            "image": "sakura_image"
+        },
+        {
+            "title" : "Từ vựng Minnano Nihongo",
+            "text" : "(Có học mới biết, có đi mới đến)",
+            "image": "sakura"
+        },
+        {
+            "title" : "Bài học",
+            "text" : "(Dốt đến đâu học lâu cũng biết)",
+            "image": "kimcactu"
+        },
+        {
+            "title" : "File download",
+            "text" : "(Luyện mãi thành tài, miệt mài tất giỏi)",
+            "image": "laudaihimeji" 
+        },
+        {
+            "title" : "Từ vựng",
+            "text" : "(Có cày có thóc, có học có chữ)",
+            "image": "namba"
+        },
+        {
+            "title" : "Ngữ pháp Minnano Nihongo",
+            "text" : "(Học, học nữa, học mãi)",
+            "image": "osaka"
+        }
+    ]

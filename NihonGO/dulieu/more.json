@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Đồ dùng",
+    "image": "ic_attractions",
+    "id": "do_dung"
+  },
+  {
+    "title": "Số",
+    "image": "ic_number",
+    "id": "so_dem"
+  },
+  {
+    "title": "Địa điểm",
+    "image": "ic_directions_places",
+    "id": "dia_diem"
+  },
+  {
+    "title": "Rau củ",
+    "image": "ic_eating_out",
+    "id": "rau_cu"
+  },
+  {
+    "title": "Trái cây",
+    "image": "ic_countries",
+    "id": "trai_cay"
+  },
+  {
+    "title": "Màu sắc",
+    "image": "ic_colours",
+    "id": "mau_sac"
+  },
+  {
+    "title": "Gia đình",
+    "image": "ic_family",
+    "id": "gia_ding"
+  },
+  {
+    "title": "Tình yêu",
+    "image": "ic_dating",
+    "id": "tinh_yeu"
+  },
+  {
+    "title": "Lễ hội",
+    "image": "ic_occasion",
+    "id": "le_hoi"
+  },
+  {
+    "title": "Giao thông",
+    "image": "ic_transportation",
+    "id": "giao_thong"
+  }
+]

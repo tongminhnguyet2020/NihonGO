@@ -1,0 +1,46 @@
+PODS:
+  - ACEDrawingView (2.2.1)
+  - Alamofire (5.1.0)
+  - iOSDropDown (0.3.4)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - MarqueeLabel (4.0.2)
+  - SideMenu (6.4.8)
+  - Toast-Swift (5.0.1)
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - ACEDrawingView
+  - Alamofire
+  - iOSDropDown
+  - Kingfisher
+  - MarqueeLabel
+  - SideMenu
+  - Toast-Swift
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  trunk:
+    - ACEDrawingView
+    - Alamofire
+    - iOSDropDown
+    - Kingfisher
+    - MarqueeLabel
+    - SideMenu
+    - Toast-Swift
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  ACEDrawingView: fa6e8461682a54db3ac65151474fc77ef7e54fd2
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  SideMenu: 4a891be552d30bb6fa87ad404d62e485f8450c34
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: ce499d09d53b87c914a3d1a2d931103d98bacfa5
+
+COCOAPODS: 1.9.1

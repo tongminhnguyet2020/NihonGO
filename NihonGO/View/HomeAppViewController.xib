@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeAppViewController" customModule="NihonGO" customModuleProvider="target">
+            <connections>
+                <outlet property="homeCollectionView" destination="kSE-Yj-gWR" id="I5f-eF-lAA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Can-kG-heQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đừng để ước mơ của bạn mãi mãi là mơ ước. Just do it !!! ^_^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-gk-QnM" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                            <rect key="frame" x="10" y="15" width="394" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4lv-tw-dTJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsg-K0-oHl">
+                            <rect key="frame" x="0.0" y="75" width="414" height="651"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kSE-Yj-gWR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="YHD-EL-hk7">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="kSE-Yj-gWR" firstAttribute="leading" secondItem="zsg-K0-oHl" secondAttribute="leading" id="HMW-2p-54r"/>
+                                <constraint firstAttribute="trailing" secondItem="kSE-Yj-gWR" secondAttribute="trailing" id="a3A-zZ-3sd"/>
+                                <constraint firstAttribute="bottom" secondItem="kSE-Yj-gWR" secondAttribute="bottom" id="h1r-zY-JYc"/>
+                                <constraint firstItem="kSE-Yj-gWR" firstAttribute="top" secondItem="zsg-K0-oHl" secondAttribute="top" id="xTM-zm-UVz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4kj-gk-QnM" secondAttribute="trailing" constant="10" id="9um-Re-hOd"/>
+                        <constraint firstAttribute="trailing" secondItem="zsg-K0-oHl" secondAttribute="trailing" id="N4x-t2-zHg"/>
+                        <constraint firstItem="zsg-K0-oHl" firstAttribute="top" secondItem="4kj-gk-QnM" secondAttribute="bottom" constant="10" id="RgR-ks-Vd2"/>
+                        <constraint firstItem="zsg-K0-oHl" firstAttribute="leading" secondItem="Can-kG-heQ" secondAttribute="leading" id="Wxh-dq-bsg"/>
+                        <constraint firstItem="4kj-gk-QnM" firstAttribute="top" secondItem="Can-kG-heQ" secondAttribute="top" constant="15" id="YHD-OF-nUp"/>
+                        <constraint firstItem="4kj-gk-QnM" firstAttribute="leading" secondItem="Can-kG-heQ" secondAttribute="leading" constant="10" id="sxk-tx-id5"/>
+                        <constraint firstAttribute="bottom" secondItem="zsg-K0-oHl" secondAttribute="bottom" constant="10" id="xRX-8G-YG7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Can-kG-heQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Mm2-B1-rC6"/>
+                <constraint firstItem="Can-kG-heQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XZx-9M-bJC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Can-kG-heQ" secondAttribute="bottom" id="hMk-OC-t8K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Can-kG-heQ" secondAttribute="trailing" id="tzU-jh-RsC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="115"/>
+        </view>
+    </objects>
+</document>

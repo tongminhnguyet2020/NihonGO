@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellHomeCollectionViewCell" customModule="NihonGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhP-Xw-RG0">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sakura_image" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-IG-3kM">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Aw-BN-UNM">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sBJ-HE-VvM">
+                                        <rect key="frame" x="5" y="10" width="160" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bảng chữ cái" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6a-tj-BPb">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="EN6-9L-9NK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Học hành vất vả kết quả)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o21-7g-Rfu" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                <rect key="frame" x="0.0" y="120" width="160" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sBJ-HE-VvM" firstAttribute="leading" secondItem="8Aw-BN-UNM" secondAttribute="leading" constant="5" id="6Gq-aw-pSV"/>
+                                    <constraint firstItem="sBJ-HE-VvM" firstAttribute="top" secondItem="8Aw-BN-UNM" secondAttribute="top" constant="10" id="U7w-vt-RRI"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBJ-HE-VvM" secondAttribute="trailing" constant="5" id="t3r-EQ-lxy"/>
+                                    <constraint firstAttribute="bottom" secondItem="sBJ-HE-VvM" secondAttribute="bottom" constant="20" id="zDZ-cY-1sy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cIG-IG-3kM" firstAttribute="top" secondItem="MhP-Xw-RG0" secondAttribute="top" id="0lX-0o-Dqc"/>
+                            <constraint firstItem="8Aw-BN-UNM" firstAttribute="leading" secondItem="MhP-Xw-RG0" secondAttribute="leading" id="3U9-YU-4Sa"/>
+                            <constraint firstAttribute="bottom" secondItem="cIG-IG-3kM" secondAttribute="bottom" id="JZ4-nh-GzZ"/>
+                            <constraint firstItem="8Aw-BN-UNM" firstAttribute="top" secondItem="MhP-Xw-RG0" secondAttribute="top" id="ULr-b3-b3I"/>
+                            <constraint firstAttribute="trailing" secondItem="8Aw-BN-UNM" secondAttribute="trailing" id="Vso-C3-9YM"/>
+                            <constraint firstAttribute="bottom" secondItem="8Aw-BN-UNM" secondAttribute="bottom" id="pGM-td-0XD"/>
+                            <constraint firstAttribute="trailing" secondItem="cIG-IG-3kM" secondAttribute="trailing" id="uF9-QE-ogT"/>
+                            <constraint firstItem="cIG-IG-3kM" firstAttribute="leading" secondItem="MhP-Xw-RG0" secondAttribute="leading" id="vb9-nn-5cU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="MhP-Xw-RG0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="azc-Hp-ipF"/>
+                <constraint firstAttribute="trailing" secondItem="MhP-Xw-RG0" secondAttribute="trailing" id="bJv-EZ-y7v"/>
+                <constraint firstItem="MhP-Xw-RG0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="daB-S1-yWt"/>
+                <constraint firstAttribute="bottom" secondItem="MhP-Xw-RG0" secondAttribute="bottom" id="rdQ-Qs-Evk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="170" height="198"/>
+            <connections>
+                <outlet property="cellHomeView" destination="MhP-Xw-RG0" id="r5T-ca-eJX"/>
+                <outlet property="homeImageView" destination="cIG-IG-3kM" id="PCI-6b-8C6"/>
+                <outlet property="textHomeLabel" destination="o21-7g-Rfu" id="3Rt-pP-6V9"/>
+                <outlet property="titleHomeLabel" destination="Y6a-tj-BPb" id="SCO-4Z-rbl"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="66.964285714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sakura_image" width="500" height="325"/>
+    </resources>
+</document>
