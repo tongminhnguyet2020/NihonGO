@@ -17,9 +17,11 @@ class ConversationDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var vnLabel: UILabel!
     
     @IBOutlet weak var allView: UIView!
-    
+
+    var dataRe: DialogueOfLesson?
     
     func setupConversation(dataRe: DialogueOfLesson?) {
+        self.dataRe = dataRe
         if let data = dataRe {
             kanaNameLabel.text = data.kanaName
             romajiNameLabel.text = data.romaji_name
@@ -34,6 +36,9 @@ class ConversationDetailTableViewCell: UITableViewCell {
     }
 
     @IBAction func audioButtonTouchUpInside(_ sender: Any) {
+        if let text = dataRe?.kana {
+            TextToSpeech.speech(text: text)
+        }
     }
     
     

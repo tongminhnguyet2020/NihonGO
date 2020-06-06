@@ -2649,7 +2649,9 @@
 			baseConfigurationReference = 2EB6487C06B63B222EA42845 /* Pods-NihonGO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UEHM6HGACJ;
 				INFOPLIST_FILE = NihonGO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2657,6 +2659,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.min.NihonGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BanWildcard Xcode 11";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2667,7 +2670,9 @@
 			baseConfigurationReference = 3330F05FEECEA018F8624549 /* Pods-NihonGO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UEHM6HGACJ;
 				INFOPLIST_FILE = NihonGO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2675,6 +2680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.min.NihonGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "BanWildcard Xcode 11";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
